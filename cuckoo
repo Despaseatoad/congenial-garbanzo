@@ -1,0 +1,15 @@
+#!/bin/bash
+soundfile=/usr/local/share/cuckoo/cuckoo.ogg #path of the cuckoo sound file
+delay=2 #delay between eject and sound
+
+cuckoo () {
+    paplay $soundfile&
+    sleep 1
+    echo cuckoo
+}
+eject cdrom&
+sleep $delay
+for (( i = 1 ; i <= `date +%-I` ; i++ )); do
+    cuckoo
+done
+eject -t cdrom
