@@ -1,7 +1,13 @@
-Cuckoo
-======
+Introduction
+============
 
-Cuckoo is a small script that that turns your optical drive into a cuckoo clock.
+Cuckoo is a small but effective script that turns your optical drive into a cuckoo clock.
+
+>_"thats delightful, a cuckoo clock pc"_  
+-- Discord user fkinglag
+
+>_"time to put the dvd drive back into the pc"_  
+-- Discord user nathanielcwm
 
 System requirements
 ===================
@@ -13,7 +19,8 @@ System requirements
 Installation
 ============
 
-Run the ```./install.sh``` script as root.
+1. Download and extract the zipball from https://github.com/Despaseatoad/cuckoo/zipball/master
+2. Run the `install.sh` script as root.
 
 License
 =======
