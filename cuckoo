@@ -3,7 +3,7 @@ soundfile=/usr/local/share/cuckoo/cuckoo.ogg #path of the cuckoo sound file
 delay=2 #delay between eject and sound
 
 cuckoo () {
-    paplay $soundfile&
+    XDG_RUNTIME_DIR=/run/user/$UID paplay $soundfile& #Set XDG_RUNTIME_DIR to make PulseAudio work when running as cronjob
     sleep 1
     echo cuckoo
 }
